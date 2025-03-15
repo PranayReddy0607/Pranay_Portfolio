@@ -32,7 +32,7 @@ const Contact = () => {
                 <label htmlFor="">Your Email</label>
                 <input type='email' placeholder='Enter your email' name='email'/>
                 <label htmlFor ="">Write your message hear</label>
-                <textarea name="message" rows="8" placeholder='enter your message'></textarea>
+                <textarea name="message" rows="8" placeholder='Enter your message'></textarea>
                 <button type='sumbit' className="contact-submit">Submit now</button>
             </form>
         </div>
