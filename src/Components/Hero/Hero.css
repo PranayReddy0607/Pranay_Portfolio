@@ -1,0 +1,102 @@
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+  }
+  
+  .flip-card {
+    width: 400px;
+    height: 500px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+  .flip-card img:hover{
+    width: 400px;
+    height: 500px;
+    border-radius: 5px;
+    transform: scale(1.10);
+    transition: 0.5s;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card.flip .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Create rounded corners by setting border-radius to 50% */
+  }
+  
+  .hero h1 {
+    text-align: center;
+    width: 60%;
+    font-size: 80px;
+    font-weight: 500;
+  }
+  
+  .hero h1 span {
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-color: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .hero p {
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 50px;
+  }
+  
+  .hero-action {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+  
+  .hero-connect {
+    padding: 20px 35px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 100%);
+    cursor: pointer;
+  }
+  
+  .hero-resume {
+    padding: 20px 35px;
+    border-radius: 50px;
+    border: 2px solid white;
+    cursor: pointer;
+  }
+  
+  .hero-connect:hover {
+    border: 2px solid white;
+  }
+  
+  .hero-resume:hover {
+    border-color: #B415FF;
+  }
+  
